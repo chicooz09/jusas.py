@@ -1,0 +1,13 @@
+idade = int(input('digite sua idade'))
+sexo = input("digite seu sexo (M/F): ").lower()
+
+if idade < 18 and sexo == 'm':
+  print("menor de idade - masculino")
+elif idade >= 18 and sexo == 'm':
+  print("maior de idade - masculino")
+elif idade < 18 and sexo == 'f':
+  print("menor de idade - feminino")
+elif idade >= 18 and sexo == 'f':
+  print("maior de idade - feminino")
+else:
+  print("sexo invalido")
