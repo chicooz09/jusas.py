@@ -1,0 +1,19 @@
+s1 = float(input("digite seu salario bruto: "))
+s2 = float
+if s1 <= 1693.71:
+    s2 = s1*0.08
+    print("seu salario bruto é: ", s1)
+    print("o desconto do seu salario é: " ,s2)
+    print ("seu salario polido é ", s1 - s2) 
+elif s1 >= 1693.72 and s1 <= 2822.90:
+    s2 = s1 * 0.09
+    print("seu salario bruto é: ", s1)
+    print("o desconto do seu salario é: " ,s2)
+    print("seu salario é ", s1 - s2)
+elif s1 >= 2822.91 and s1 <= 5645.80:
+    s2 = s1 * 0.11
+    print("seu salario bruto é: ", s1)
+    print("o desconto do seu salario é: " ,s2)
+    print("seu salario é ", s1 - s2)
+else:
+    print("digite um salatio valido")
