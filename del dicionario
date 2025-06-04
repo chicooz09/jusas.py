@@ -1,0 +1,8 @@
+Daniela = {
+    'nome' : 'daniela',
+    'sobrenome' : 'souza',
+    'profissao' : 'design',
+    'filhos' : 'helena'
+}
+del Daniela['filhos']
+print(Daniela)
