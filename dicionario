@@ -1,0 +1,10 @@
+Daniela = {
+    'nome' : 'daniela',
+    'sobrenome' : 'souza',
+    'profissao' : 'design',
+    'filhos' : 'helena'
+}
+print(Daniela['nome'])
+print(Daniela['sobrenome'])
+print(Daniela['profissao'])
+print(Daniela['filhos'])
