@@ -1,0 +1,5 @@
+alunos = ['rafaela', 'pedro', 'bianca', 'jessica']
+print('alunos')
+novosAlunos = ['joana', 'maria', 'ana', 'lucas']
+alunos = alunos + novosAlunos
+print(alunos)
