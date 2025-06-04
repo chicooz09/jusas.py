@@ -1,0 +1,7 @@
+alunos = ['rafaela', 'pedro', 'bianca', 'jessica', 'helena']
+print(alunos)
+print('a lista de alunos tem {} alunos' .format(len(alunos)))
+
+alunos.remove('bianca')
+
+print(alunos)
