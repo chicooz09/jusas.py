@@ -1,0 +1,25 @@
+#tupla
+meses = ('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro')
+print (meses)
+
+#lista
+Gp1 = ['jhonatan', 'gabriel', 'ana clara', 'joao albert', 'maria eduarda', 'jose henrique' ]
+Gp2 = ['Carlos']  
+Gp1 = Gp1 + Gp2
+Gp1.remove('jhonatan')
+Gp1.remove('ana clara')
+Gp1.remove('joao albert')
+print  (Gp1)
+
+#dicionario
+analuisa = {    
+          'nome': 'analuisa',
+          'sobrenome' : 'gonsalves',
+          'profissao' : 'engenheira',
+          'estado civil' : 'solteira'
+}
+
+print(analuisa['nome'])
+print(analuisa['sobrenome'])
+print(analuisa['profissao'])
+print(analuisa['estado civil'])
