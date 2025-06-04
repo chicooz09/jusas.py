@@ -13,10 +13,10 @@ print  (Gp1)
 
 #dicionario
 analuisa = {    
-          'nome': 'analuisa',
-          'sobrenome' : 'gonsalves',
-          'profissao' : 'engenheira',
-          'estado civil' : 'solteira'
+          'nome': 'matheus',
+          'sobrenome' : 'fernandes',
+          'profissao' : 'programador',
+          'estado civil' : 'solteiro'
 }
 
 print(analuisa['nome'])
