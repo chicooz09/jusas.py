@@ -1,0 +1,4 @@
+alunos = ['rafaela', 'pedro', 'bianca', 'jessica']
+alunos.sort()
+print(alunos)
+print('a lista de alunos tem {} elementos'.format(len(alunos)))
