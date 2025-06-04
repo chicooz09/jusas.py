@@ -1,0 +1,6 @@
+alunos = ['rafaela', 'pedro', 'bianca', 'jessica']
+
+alunos.insert(1,'helena')
+print(alunos)
+print('a lista de alunos tem {} alunos' .format(len(alunos)))
+print('o novo aluno que entrou se chama {}' .format(alunos[1]))
