@@ -1,0 +1,8 @@
+estacoes = ('primavera', 'verão', 'outono', 'inverno')
+print(estacoes)
+print('-'*30)
+print(estacoes[0])
+print(estacoes[1])
+print(estacoes[2])
+print(estacoes[3])
+print('-'*30)
