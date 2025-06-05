@@ -1,0 +1,35 @@
+alunos = []
+
+print("-"*40)
+aluno1 = {
+    "nome": input("Digite o nome do primeiro aluno: "),
+    "idade": int(input("Digite a idade do primeiro aluno: ")),
+    "nota": float(input("Digite a nota do primeiro aluno: "))
+}
+alunos.append(aluno1)
+
+print("-"*40)
+aluno2 = {
+    "nome": input("Digite o nome do segundo aluno: "),
+    "idade": int(input("Digite a idade do segundo aluno: ")),
+    "nota": float(input("Digite a nota do segundo aluno: "))
+}
+alunos.append(aluno2)
+
+print("-"*40)
+aluno3 = {
+    "nome": input("Digite o nome do terceiro aluno: "),
+    "idade": int(input("Digite a idade do terceiro aluno: ")),
+    "nota": float(input("Digite a nota do terceiro aluno: "))
+}
+alunos.append(aluno3)
+print("-"*40)
+
+print("\n------- Lista de Alunos -------")
+for aluno in alunos:
+    print("Nome: {} | Idade: {} | Nota: {}".format(aluno["nome"], aluno["idade"], aluno["nota"]))
+print("-"*30)
+
+soma = sum([aluno["nota"] for aluno in alunos])
+media = soma / len(alunos)
+print("\nMédia da turma: {:.2f}".format(media))
