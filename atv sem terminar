@@ -1,0 +1,20 @@
+cidadoes = []
+numC = int(input("digite a quantidade de cidadaos: "))
+print("-"*40)
+for i in range(numC):
+    cidadao = {
+        "nome": input("Digite o nome do cidadao: "),
+        "salario": int(input("Digite o salario: ")),
+        "filhos": float(input("Digite quantidade de filhos: "))
+}
+cidadoes.append(cidadao)
+print("-"*30)
+
+print("\n------- Lista de Cidadaos -------")
+for cidadao in cidadoes:
+    print("Nome: {} | salario: {} | filhos: {}".format(cidadao["nome"], cidadao["salario"], cidadao["filhos"]))
+print("-"*30)
+
+soma = sum([cidadao["salario"] for cidadao in cidadoes])
+media = soma / len(cidadoes)
+print("\nMédia da po: {:.2f}".format(media))
