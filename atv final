@@ -1,0 +1,45 @@
+
+cidadaos = []
+
+print("Digite os dados dos cidadãos (digite 'final' no nome para encerrar):")
+print("-" * 40)
+
+while True:
+    nome = input("Nome do cidadão: ")
+    if nome.lower() == "final":
+        break
+
+    salario = float(input("Salário: R$ "))
+    filhos = int(input("Número de filhos: "))
+
+    cidadao = {
+        "nome": nome,
+        "salario": salario,
+        "filhos": filhos
+    }
+
+    cidadaos.append(cidadao)
+    print("-" * 30)
+
+
+print("\n------- Lista de Cidadãos -------")
+for c in cidadaos:
+    print(f"Nome: {c['nome']} | Salário: R$ {c['salario']:.2f} | Filhos: {c['filhos']}")
+print("-" * 30)
+
+
+total_salario = sum(c["salario"] for c in cidadaos)
+total_filhos = sum(c["filhos"] for c in cidadaos)
+maior_salario = max(c["salario"] for c in cidadaos)
+salarios_ate_100 = len([c for c in cidadaos if c["salario"] <= 100.0])
+total_pessoas = len(cidadaos)
+
+media_salario = total_salario / total_pessoas if total_pessoas > 0 else 0
+media_filhos = total_filhos / total_pessoas if total_pessoas > 0 else 0
+percentual_ate_100 = (salarios_ate_100 / total_pessoas) * 100 if total_pessoas > 0 else 0
+
+
+print(f"\nMédia salarial da população: R$ {media_salario:.2f}")
+print(f"Média do número de filhos: {media_filhos:.2f}")
+print(f"Maior salário informado: R$ {maior_salario:.2f}")
+print(f"Percentual de pessoas com salário até R$100,00: {percentual_ate_100:.2f}%")
