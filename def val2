@@ -1,0 +1,9 @@
+def usuario(*val):
+    val = []
+    res = "S"
+    while res == "S":
+        val.append(int(input('digite um numero: ')))
+        res = str(input('continar [S/N]: ')).upper()
+        print(val)
+
+usuario()
