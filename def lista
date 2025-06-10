@@ -1,0 +1,10 @@
+def dobrar (lista):
+    conta = 0
+    while conta < len(lista):
+        lista[conta] *= 2
+        conta = conta + 1
+
+n = [1, 2, 3, 4, 5]
+print(n)
+dobrar(n)
+print(n)
