@@ -1,0 +1,9 @@
+def divisao(n1,n2):
+    return(n1/n2)
+
+
+n1 = int(input('digite um numero: '))
+n2 = int(input('digite outro numero: '))
+
+res = divisao(n1,n2)
+print(res)
